@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = (props) => {
     console.log(props,"<<< props from main")
-    const {items} = props;
+    const {items , addToCart} = props;
 
     return (
         <div>
@@ -14,7 +14,7 @@ const Main = (props) => {
                         <li key={item.id}>
                             <h2>{item.name}</h2>
                             <h2>price :{item.price}p</h2>
-                            <button>Add To Cart</button>
+                            <button onCLick={()=>addToCart(item)}>Add To Cart</button>
                         </li>
                         )
                     })

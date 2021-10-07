@@ -1,8 +1,11 @@
+import Main from "./components/Main";
+import Basket from "./components/Basket";
 
 function App() {
   return (
     <div>
-     <h1>cdl cart</h1>
+     <Main></Main>
+     <Basket></Basket>
     </div>
   );
 }

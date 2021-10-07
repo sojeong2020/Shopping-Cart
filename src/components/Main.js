@@ -5,7 +5,7 @@ const Main = (props) => {
     const {items , addToCart, removeFromCart} = props;
 
     return (
-        <div>
+        <div className="block">
             <h1>Items</h1>
             <ul>
                 {

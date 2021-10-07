@@ -2,4 +2,11 @@ body {
   color:blueviolet;
 }
 
-
+.block {
+  display: inline-block;
+  border: 1px solid rgb(15, 73, 90);
+  border-radius: 3%;
+  padding: 2rem ;
+  margin: 10rem;
+  background-color: rgb(135, 209, 222);
+}

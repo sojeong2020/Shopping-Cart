@@ -4,7 +4,7 @@ const Basket = (props) => {
     console.log(props,"<<< props from basket")
     const {cartItems} =props;
     return (
-        <div>
+        <div className="block">
             <h1>Shopping Cart</h1>
             {cartItems.length === 0 && <p>Cart is empty!</p>}
             <ul>

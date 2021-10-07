@@ -12,7 +12,7 @@ const Basket = (props) => {
                  return(
                      <li ley={item.id}>
                      <h2>{item.name}</h2>
-                     <h2>Quentity: {item.qty}</h2>
+                     <h2>Quantity: {item.qty}</h2>
                      <h2>Price: {
                          item.id === "1" ? item.qty * item.price+Math.floor(item.qty/3)*-20 : 
                          item.id === "2" ? item.qty * item.price+Math.floor(item.qty/2)*-15 : item.qty * item.price

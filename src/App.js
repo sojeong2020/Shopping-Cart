@@ -18,10 +18,22 @@ function App() {
     }
   }
 
+  const removeFromCart = (item) => {
+    const exist = cartItems.find(elem=>elem.id === item.id);
+    if(exist.qty === 1) {
+      setCartItems(cartItems.filter(elem=> elem.id !== item.id));
+    }else {
+      setCartItems(
+        cartItems.map(elem=> elem.id === item.id ? {...exist, qty:exist.qty-1} : elem)
+ 
+      )
+    }
+  }
+
   return (
     <div>
-     <Main items={items} addToCart={addToCart} ></Main>
-     <Basket></Basket>
+     <Main items={items} addToCart={addToCart} removeFromCart={removeFromCart}></Main>
+     <Basket cartItems={cartItems}></Basket>
     </div>
   );
 }
